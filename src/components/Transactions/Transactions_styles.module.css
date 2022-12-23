@@ -1,0 +1,82 @@
+.father{
+    width: 350px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-flow: column nowrap;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-flow: row nowrap;
+    margin: 12px; 
+}
+
+.menu_container{
+    font-size: 12px;
+    color: #aaa;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-bottom: 3px;
+}
+
+.transactions{
+    width: 100%;
+    padding: 10px;
+    background: rgb(79,80,88);
+    background: linear-gradient(153deg, rgba(79,80,88,1) 0%, rgba(31,30,40,1) 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 25px;
+}
+
+/* Each transaction */
+.transaction{
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-flow: row nowrap;
+}
+.transaction_icon{
+    width: 40px;
+    font-size: 20px;
+    background-color: rgba(161, 160, 171, 0.456);
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.transaction_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.place{
+    margin: 0;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.amount{
+    font-size: 14px;
+    font-weight: bolder;
+}

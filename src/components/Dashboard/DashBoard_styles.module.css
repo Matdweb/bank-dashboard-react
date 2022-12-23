@@ -1,0 +1,67 @@
+.father{
+    grid-column: 2;
+    grid-row: 1; 
+    width: 100%;
+    height: 100%;
+    background: rgb(29,29,34);
+    background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.container_title{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-flow: row wrap;
+}
+
+.search {
+    color: rgb(109, 112, 128);
+    padding: 8px 10px;
+    background-color: rgb(46, 48, 58);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+
+.search_input{
+    background-color: rgba(29, 26, 26, 0);
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    padding: 0;
+    color: #fff;
+}
+.father::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.father::-webkit-scrollbar-button:increment,.father::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.father::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.father::-webkit-scrollbar-thumb {
+    background-color: #52525f;
+    border-radius: 20px;
+}
+
+.father::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}

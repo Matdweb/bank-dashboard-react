@@ -1,0 +1,125 @@
+.father{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 31, 37);
+}
+
+.navbar_container{
+    max-width: 400px;
+    height: 97%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    border: 1px solid rgb(80, 71, 71);
+    background-color: rgb(37, 38, 42);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+}
+
+.navbar_logo{
+   min-width: 50px;
+   min-height: 50px; 
+   max-width: 50px;
+   max-height: 50px;
+   border: 1px solid #aaaa;
+   margin: 30px 0 30px 15px;
+}
+
+.navbar_options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.container_option{
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 0;
+}
+
+.option{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    border-radius: 15px;
+    color: rgba(190, 190, 190, 0.435);
+    font-size: large;
+    margin-left: 15px;
+}
+
+.option_content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+
+.option:hover{
+    box-shadow: 29px -34px 30px -25px rgba(39, 40, 44, 0.4) inset;
+-webkit-box-shadow: 29px -34px 30px -25px rgba(0,0,0,0.4) inset;
+-moz-box-shadow: 29px -34px 30px -25px rgba(0,0,0,0.4) inset;
+}
+
+.log_out{
+    background-color: rgba(255, 255, 255, 0.692);
+    color: #000;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.log_out:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+/* CSS styles for responsive design */
+@media only screen and (max-width: 1200px){
+	.navbar_container{
+        width: 70px;
+        align-items: center;
+    }
+    .menu_container{
+        align-items: center;
+    }
+    .navbar_logo{
+        margin: 30px 0px;
+    }
+    .navbar_options{
+        justify-content: center;
+    }
+    .option{
+        width: unset;
+        margin-left: 5px;
+    }
+}

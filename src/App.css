@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body.chakra-ui-light{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: rgb(29,29,34);
+    background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
+}
+
+.father-app{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: grid;
+    grid-template-columns: minmax(100px,500px) minmax(min-content,1000px) minmax(400px,600px);
+    grid-template-rows: 100%;
+    grid-auto-rows: auto;
+}
+
+/* Estilos de scrroll bar de father */
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+*::-webkit-scrollbar:vertical {
+    width:5px;
+}
+
+*::-webkit-scrollbar-button:increment,*::-webkit-scrollbar-button {
+    display: none;
+} 
+
+*::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #474750;
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+footer{
+    padding: 20px; 
+    color: #fff; 
+    bottom: 0;
+}
+
+footer a{
+    color: #fff; 
+    text-decoration: none;
+}
+
+/* Charkra UI style anulations */
+*{
+    border-style: none;
+    box-sizing: unset !important;
+}
+h2{
+    font-size: 1.5em;
+}
+
+html{
+    height: 100%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px){
+	.father-app{
+        grid-template-columns: 90px 320px;
+        grid-template-rows: 100% auto;
+    }
+    #root{
+        min-height: 550vh;
+    }
+}

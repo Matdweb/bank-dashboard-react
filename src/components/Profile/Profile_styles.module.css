@@ -1,0 +1,155 @@
+/* title styles */
+.father{
+    grid-column: 3;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(59,60,69);
+    background: linear-gradient(126deg, rgba(59,60,69,1) 0%, rgba(19,20,22,1) 100%);
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.options{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.notifications{
+    color: rgb(192, 193, 205);
+    width: 30px;
+    padding: 12px;
+    background-color: rgb(43,43,48);
+    background: linear-gradient(0deg, rgba(43,43,48,1) 19%, rgba(34,35,40,0.8435749299719888) 100%);
+    border-radius: 30%;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right_options{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+/* total wheel styles */
+.statics_container{ 
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.balance_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+}
+
+.background{
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    background: rgb(32,34,34);
+    background: radial-gradient(circle, rgba(32,34,34,1) 0%, rgba(34,38,38,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -1px 76px -5px rgba(0,0,0,0.61) inset;
+    -webkit-box-shadow: -1px -1px 76px -5px rgba(0,0,0,0.61) inset;
+    -moz-box-shadow: -1px -1px 76px -5px rgba(0,0,0,0.61) inset;
+}
+
+.wheel{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: rgb(55,63,65);
+    background: linear-gradient(126deg, rgba(55,63,65,1) 0%, rgba(29,30,33,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(203, 205, 212, 0.525);
+    transform: rotate(-40deg);
+    transition: 1s all;
+}
+
+.wheel:hover{
+    animation: rotating 1.5s; 
+}
+
+.wheel:hover .total{
+    animation: rotating-other-way 1.5s;
+}
+
+.total{
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    background: rgb(32,34,34);
+    background: radial-gradient(circle, rgba(32,34,34,1) 0%, rgba(34,38,38,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(40deg);
+    box-shadow: 10px 11px 29px 5px rgba(0,0,0,0.61) inset;
+    -webkit-box-shadow: 10px 11px 29px 5px rgba(0,0,0,0.61) inset;
+    -moz-box-shadow: 10px 11px 29px 5px rgba(0,0,0,0.61) inset;
+}
+
+.average{
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.money{
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(-400deg);
+    }
+}
+
+@keyframes rotating-other-way{
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(400deg);
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px){
+    .father{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .statics_container{ 
+        transform: scale(.9);
+    }
+}

@@ -1,0 +1,83 @@
+.father{
+    width: 400px;  
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-flow: column nowrap;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-flow: row nowrap;
+}
+
+.more{
+   font-size: 8px; 
+   color: #aaaa;
+   cursor: pointer;
+   margin-right: 20px;
+   padding: 10px;
+}
+
+.more:hover{
+    background: rgb(60,60,64);
+    background: linear-gradient(0deg, rgba(60,60,64,1) 19%, rgba(44,45,55,0.3477766106442577) 100%);
+    border-radius: 12px;
+ }
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 10px;
+    flex-flow: row wrap;
+    overflow-y: scroll;
+}
+
+/* Each card */
+.card{
+    margin: 10px;
+    width: 60px;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 20px;
+    background: rgb(60,60,64);
+    background: linear-gradient(0deg, rgba(60,60,64,1) 19%, rgba(44,45,55,0.3477766106442577) 100%);
+}
+
+.card_img{
+    background: rgb(43,43,48);
+    background: linear-gradient(0deg, rgba(43,43,48,1) 19%, rgba(34,35,40,0.8435749299719888) 100%);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.card_text{
+    padding-top: 15px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.amount{
+    padding: 0;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0);
+}
