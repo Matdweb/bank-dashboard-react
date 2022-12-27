@@ -1,7 +1,7 @@
 import React from 'react'
 import MyCardCSS from './MyCard_styles.module.css'
-import VISAimg from '../../assets/img/visa-10.svg'
-import Chip from '../../assets/img/chip-1.png'
+import VISAimg from '../../../assets/img/visa-10.svg'
+import Chip from '../../../assets/img/chip-1.png'
 import { CgMenuRightAlt } from 'react-icons/all'
 
 function MyCard() {

@@ -1,9 +1,9 @@
 import React from 'react'
 import { FaSearch } from 'react-icons/fa'
-import MyCard from '../MyCard/MyCard'
-import Categories from '../Categories/Categories'
-import ListContacts from '../Contacts/ListContacts'
-import Transactions from '../Transactions/Transactions'
+import MyCard from './MyCard/MyCard'
+import Categories from './Categories/Categories'
+import ListContacts from './Contacts/ListContacts'
+import Transactions from './Transactions/Transactions'
 import DashboardCSS from'./DashBoard_styles.module.css'
 
 function DashBoard() {

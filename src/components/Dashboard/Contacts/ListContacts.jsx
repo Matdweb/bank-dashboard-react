@@ -20,10 +20,20 @@ function ListContacts() {
         date: "Feb 30, 2022",
         amount: "180.00"
     },{
-        img: 0,
+        img: 2,
         name: "Matias Maddison",
         date: "Nov 28, 2022",
         amount: "220.00"
+    },{
+        img: 1,
+        name: "Matias Maddison",
+        date: "Feb 28, 2022",
+        amount: "20.00"
+    },{
+        img: 0,
+        name: "Michel Jefferson",
+        date: "April 07, 2022",
+        amount: "109.00"
     }]
   return (
     <div className={ContactsCSS.father}>
@@ -33,18 +43,20 @@ function ListContacts() {
             <CgMenuRightAlt />
         </span>
     </div>
-    <div className={ContactsCSS.contacts}>
-        {contacts.map((contact,index)=>{
-            return (
-                <Contact 
-                img={contact.img}
-                name={contact.name}
-                date={contact.date}
-                amount={contact.amount}
-                key={index}
-                />
-            ) 
-        })}
+    <div className={ContactsCSS.container}>
+        <div className={ContactsCSS.contacts}>
+            {contacts.map((contact,index)=>{
+                return (
+                    <Contact 
+                    img={contact.img}
+                    name={contact.name}
+                    date={contact.date}
+                    amount={contact.amount}
+                    key={index}
+                    />
+                ) 
+            })}
+        </div>
     </div>
   </div>
   )

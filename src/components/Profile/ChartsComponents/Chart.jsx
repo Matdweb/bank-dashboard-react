@@ -3,7 +3,7 @@ import { Progress } from '@chakra-ui/react'
 import { Tooltip } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react'
-import GraphicCSS from './BarsGraphic_styles.module.css'
+import GraphicCSS from './Chart.module.css'
 
 import { IoIosArrowDown } from 'react-icons/all'
 
@@ -59,7 +59,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'r
   ];
 
 function BarsGraphic() {
-  //First Chart
+  //First Bars Chart
     const values = ['$709','$458','$600','$854','$678'] 
     const bars = []
     const optionsMenu = ['Montly','Per year','Dialy','Every 1h']
@@ -77,7 +77,7 @@ function BarsGraphic() {
     const [containerWidth, setContainerWidth] = useState(350)
     useEffect(() => {
       window.screen.width <= 600 ? setContainerWidth(250) : setContainerWidth(350)
-    }, []);
+    }, [window.screen.width]);
 
     
   return (
@@ -127,6 +127,7 @@ function BarsGraphic() {
               </TabList>
               <TabPanels>
                 <TabPanel width='100%' height='380px'>
+
                   {/* //Graphic #1 */}
                   <div className={GraphicCSS.graphics_container}>
                     {
@@ -150,7 +151,8 @@ function BarsGraphic() {
 
                 </TabPanel>
                 <TabPanel width='100%' height='380px'>
-                {/* //Graphic #2 */}
+
+                  {/* //Graphic #2 */}
                   <div style={{ width: '100%', height: 300 }}>
                     <ResponsiveContainer>
                       <PieChart>
@@ -161,7 +163,8 @@ function BarsGraphic() {
 
                 </TabPanel>
                 <TabPanel width='100%' height='380px'>
-                {/* //Graphic #3 */}
+                  
+                  {/* //Graphic #3 */}
                 <ResponsiveContainer width="100%" height="100%">
                   <RadarChart cx="50%" cy="50%" outerRadius="80%" data={billsCategories}>
                     <PolarGrid />

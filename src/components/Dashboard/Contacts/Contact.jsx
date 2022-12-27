@@ -1,5 +1,5 @@
 import React from 'react'
-import images from '../../assets/exports/ContacList'
+import images from '../../../assets/exports/ContacList'
 import ContactCSS from './ListContacts_styles.module.css'
 
 

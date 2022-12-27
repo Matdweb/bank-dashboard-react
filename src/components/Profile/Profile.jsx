@@ -1,10 +1,11 @@
 import React from 'react'
 import ProfileCSS from'./Profile_styles.module.css'
-import BarsGraphic from '../BarsGraphic/BarsGraphic'
+import BarsGraphic from './ChartsComponents/Chart'
 import images from '../../assets/exports/ContacList'
 import { RiNotification2Fill } from 'react-icons/all'
 import { BiMessageSquareDots } from 'react-icons/all'
 import { CgMenuRightAlt } from 'react-icons/all'
+
 import {
   Menu,
   MenuButton,

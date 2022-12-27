@@ -33,7 +33,17 @@ function Transactions() {
         icon: 4,
         place: "Mexican food",
         date: "Nov 28, 2022 at 13:21",
-        amount: "220.00"
+        amount: "200.00"
+    },{
+      icon: 3,
+      place: "Stilizion",
+      date: "Feb 30, 2022 at 12:00",
+      amount: "60.00"
+    },{
+      icon: 0,
+      place: "Ikine Houses",
+      date: "Abril 28, 2022 at 9:00",
+      amount: "150.00"
     }]
 
     const optionsMenu = ['Montly','Per year','Dialy','Every 1h']
@@ -77,18 +87,20 @@ function Transactions() {
             </Menu>
         </span>
     </div>
-    <div className={TransactionsCSS.transactions}>
-        {transactions.map((transaction,index)=>{
-            return (
-                <Transaction 
-                img={transaction.icon}
-                place={transaction.place}
-                date={transaction.date}
-                amount={transaction.amount}
-                key={index}
-                />
-            ) 
-        })}
+    <div className={TransactionsCSS.container}>
+      <div className={TransactionsCSS.transactions}>
+          {transactions.map((transaction,index)=>{
+              return (
+                  <Transaction 
+                  img={transaction.icon}
+                  place={transaction.place}
+                  date={transaction.date}
+                  amount={transaction.amount}
+                  key={index}
+                  />
+              ) 
+          })}
+      </div>
     </div>
   </div>
   )

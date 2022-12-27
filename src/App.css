@@ -27,7 +27,7 @@ body.chakra-ui-light{
 }
 
 *::-webkit-scrollbar:vertical {
-    width:5px;
+    width: 10px;
 }
 
 *::-webkit-scrollbar-button:increment,*::-webkit-scrollbar-button {
@@ -39,7 +39,7 @@ body.chakra-ui-light{
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #474750;
+    background-color: #26262f;
     border-radius: 20px;
 }
 
@@ -79,5 +79,6 @@ html{
     }
     #root{
         min-height: 550vh;
+        overflow-x: hidden;
     }
 }

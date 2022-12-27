@@ -57,6 +57,7 @@
     border-radius: 20px;
     background: rgb(60,60,64);
     background: linear-gradient(0deg, rgba(60,60,64,1) 19%, rgba(44,45,55,0.3477766106442577) 100%);
+    transition: all 1s;
 }
 
 .card_img{
@@ -80,4 +81,8 @@
     font-size: medium;
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0);
+}
+
+.card:hover{ 
+    transform: scale(1.09);
 }
