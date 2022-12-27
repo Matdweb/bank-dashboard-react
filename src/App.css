@@ -6,6 +6,7 @@ body.chakra-ui-light{
     overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     background: rgb(29,29,34);
     background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
@@ -19,6 +20,7 @@ body.chakra-ui-light{
     grid-template-columns: minmax(100px,500px) minmax(min-content,1000px) minmax(400px,600px);
     grid-template-rows: 100%;
     grid-auto-rows: auto;
+    min-height: 100vh;
 }
 
 /* Estilos de scrroll bar de father */
