@@ -8,8 +8,6 @@
 }
 
 .container_stats{
-    min-width: min-content;
-    width: 550px;
     max-width: 600px;
     height: 90%;
     border: 1.5px solid #aaa;
@@ -19,17 +17,42 @@
     align-items: flex-start;
     flex-flow: row wrap;
     padding: 10px;
+    padding-bottom: 0px;
 }
 
-.greenStats{
+.card{
+    max-width: 220px;
+    min-width: 200px;
+    height: 130px;
     padding: 10px;
-    background-color: #aaa;
+    background: linear-gradient(122deg, rgb(40, 42, 52) 0%, rgb(45, 48, 62) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
 }
 
+.chart{
+    transform: scale(2);
+    color: #973f41;
+}
 .coinContainer{
-
+    width: 240px;
+    height: 400px;
+    margin: 10px;
+    outline: 1.5px solid #aaa;
 }
 
 .container_table{
-    
+    outline: 1.5px solid #aaa;
+}
+
+.card_chart{
+    width: 530px;
+    height: 600px;
+    margin: 10px;
+    outline: 1.5px solid #aaa;
 }
