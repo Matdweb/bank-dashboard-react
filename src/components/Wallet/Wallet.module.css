@@ -8,8 +8,9 @@
 }
 
 .container_stats{
-    width: 380px;
-    max-width: 400px;
+    min-width: min-content;
+    width: 550px;
+    max-width: 600px;
     height: 90%;
     border: 1.5px solid #aaa;
     padding: 12px;
@@ -17,6 +18,12 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
+    padding: 10px;
+}
+
+.greenStats{
+    padding: 10px;
+    background-color: #aaa;
 }
 
 .coinContainer{
