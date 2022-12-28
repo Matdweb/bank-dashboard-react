@@ -8,8 +8,40 @@ import { FaBriefcase } from 'react-icons/fa'
 import { AiFillSetting } from 'react-icons/all'
 import { MdPowerSettingsNew } from 'react-icons/all'
 import { FiLogOut } from 'react-icons/all'
+import { Link } from "react-router-dom"
 
-const optionsMenu = [[<FaHouseUser />,"Home"], [<FaWallet />,"Wallet"], [<TfiLoop />,"Reaccredit"], [<FaDochub />,"Documentation"], [<FaBriefcase />,"Work graphics"], [<AiFillSetting />,"Settings"], [<MdPowerSettingsNew />,"Power"]]
+const optionsMenu = [
+    {
+        href: "/Home",
+        icon: <FaHouseUser />,
+        content: "Home"
+    },{
+        href: "/Wallet",
+        icon: <FaWallet />,
+        content: "Wallet"
+    },{
+        href: "/ReCredit",
+        icon: <TfiLoop />,
+        content: "Re-Credit"
+    },{
+        href: "/Documentation",
+        icon: <FaDochub />,
+        content: "Documentation"
+    },{
+        href: "/Charts",
+        icon: <FaBriefcase />,
+        content: "Work Charts"
+    },{
+        href: "/Settings",
+        icon: <AiFillSetting />,
+        content: "Settings"
+    },{
+        href: "/Power",
+        icon: <MdPowerSettingsNew />,
+        content: "Power"
+    }
+    
+]
 
 function NavBar() {
   return (
@@ -23,12 +55,12 @@ function NavBar() {
                     <label className={NavBarCSS.container_option}>
                         {optionsMenu.map((option,i)=>{
                             return(
-                            <div className={NavBarCSS.option} key={i}>
+                            <Link to={option.href} className={NavBarCSS.option} key={i}>
                                 <span className={NavBarCSS.option_content}>
-                                    {option[0]}
-                                    {screen.width <= 1200 ? " " : <p style={{marginLeft: "12px"}}>{option[1]}</p>}
+                                    {option.icon}
+                                    {screen.width <= 1200 ? " " : <p style={{marginLeft: "12px"}}>{option.content}</p>}
                                 </span>
-                            </div>
+                            </Link>
                             )
                         })}
                     </label>

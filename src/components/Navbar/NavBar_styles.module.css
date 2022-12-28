@@ -71,6 +71,8 @@
     color: rgba(190, 190, 190, 0.435);
     font-size: large;
     margin-left: 15px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .option_content{
