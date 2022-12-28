@@ -1,0 +1,28 @@
+.father{
+    grid-column: 2 / 4;
+    grid-row: 1; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: 1.5px solid #aaa;
+}
+
+.container_stats{
+    width: 380px;
+    max-width: 400px;
+    height: 90%;
+    border: 1.5px solid #aaa;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.coinContainer{
+
+}
+
+.container_table{
+    
+}
