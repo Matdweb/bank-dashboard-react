@@ -2,7 +2,6 @@ import React from 'react'
 import WalletCSS from './Wallet.module.css'
 import { Avatar, Divider } from '@chakra-ui/react'
 import CoinsButton from './Button/CoinsButton'
-
 import {
     Stat,
     StatLabel,
@@ -11,29 +10,22 @@ import {
     StatArrow,
     StatGroup,
   } from '@chakra-ui/react'
+// Charts 
+import IncreasingChart from '../charts/IncreasingChart'
+import DecreasingChart from '../charts/DecreasingChart'
+import ComposedResponsiveChart from '../charts/ComposedResponsiveChart'
 
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { BsCheckCircleFill, IoIosArrowDown } from 'react-icons/all'
-
-
-// Data charts
-const Increasing = [
-    {name: 'Week 1', uv: 4000},
-    {name: 'Week 2', uv: 3400},
-    {name: 'Week 3', uv: 2000},
-    {name: 'Week 4', uv: 2780},
-    {name: 'Week 5', uv: 1890},
-    {name: 'Week6', uv: 3700}
-];
-
-const Decreasing = [
-    {name: 'Week 1', uv: 2400},
-    {name: 'Week 2', uv: 1798},
-    {name: 'Week 3', uv: 5800},
-    {name: 'Week 4', uv: 2908},
-    {name: 'Week 5', uv: 4800},
-    {name: 'Week6', uv: 3800}
-];
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer,
+} from '@chakra-ui/react'
 
 const id_card=[
   {
@@ -64,22 +56,7 @@ function Wallet() {
                       </StatHelpText>
                     </Stat>
 
-                    <ResponsiveContainer width="70%" height='30%' 
-                    className={WalletCSS.chart}>
-                      <AreaChart
-                        width={100}
-                        height={100}
-                        data={Increasing}
-                        margin={{
-                          top: 5,
-                          right: 0,
-                          left: 0,
-                          bottom: 0,
-                        }}
-                      >
-                        <Area type="monotone" dataKey="uv"  stroke="#297b4d" fill="#419e69a7" />
-                        </AreaChart>
-                    </ResponsiveContainer>
+                    <IncreasingChart />
 
                 </div>
                 <div className={WalletCSS.card}>
@@ -92,22 +69,7 @@ function Wallet() {
                       </StatHelpText>
                     </Stat>
 
-                    <ResponsiveContainer width="70%" height='30%' 
-                    className={WalletCSS.chart}>
-                      <AreaChart
-                        width={100}
-                        height={100}
-                        data={Decreasing}
-                        margin={{
-                          top: 5,
-                          right: 0,
-                          left: 0,
-                          bottom: 0,
-                        }}
-                      >
-                        <Area type="monotone" dataKey="uv"  stroke="#973f41" fill="#cc595b97" />
-                        </AreaChart>
-                    </ResponsiveContainer>
+                    <DecreasingChart />
 
                 </div>
             </div>
@@ -121,10 +83,77 @@ function Wallet() {
               
             </div>
             <div className={WalletCSS.card_chart}>
-
+              <ComposedResponsiveChart />
             </div>
         </div>
         <div className={WalletCSS.container_table}>
+
+        <TableContainer>
+          <Table variant='striped' colorScheme='teal'>
+            <TableCaption>Imperial to metric conversion factors</TableCaption>
+            <Thead>
+              <Tr>
+                <Th>To convert</Th>
+                <Th>into</Th>
+                <Th isNumeric>multiply by</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              <Tr>
+                <Td>inches</Td>
+                <Td>millimetres (mm)</Td>
+                <Td isNumeric>25.4</Td>
+              </Tr>
+              <Tr>
+                <Td>feet</Td>
+                <Td>centimetres (cm)</Td>
+                <Td isNumeric>30.48</Td>
+              </Tr>
+              <Tr>
+                <Td>yards</Td>
+                <Td>metres (m)</Td>
+                <Td isNumeric>0.91444</Td>
+              </Tr>
+              <Tr>
+                <Td>inches</Td>
+                <Td>millimetres (mm)</Td>
+                <Td isNumeric>25.4</Td>
+              </Tr>
+              <Tr>
+                <Td>feet</Td>
+                <Td>centimetres (cm)</Td>
+                <Td isNumeric>30.48</Td>
+              </Tr>
+              <Tr>
+                <Td>yards</Td>
+                <Td>metres (m)</Td>
+                <Td isNumeric>0.91444</Td>
+              </Tr>
+              <Tr>
+                <Td>inches</Td>
+                <Td>millimetres (mm)</Td>
+                <Td isNumeric>25.4</Td>
+              </Tr>
+              <Tr>
+                <Td>feet</Td>
+                <Td>centimetres (cm)</Td>
+                <Td isNumeric>30.48</Td>
+              </Tr>
+              <Tr>
+                <Td>yards</Td>
+                <Td>metres (m)</Td>
+                <Td isNumeric>0.91444</Td>
+              </Tr>
+            </Tbody>
+            <Tfoot>
+              <Tr>
+                <Th>To convert</Th>
+                <Th>into</Th>
+                <Th isNumeric>multiply by</Th>
+              </Tr>
+            </Tfoot>
+          </Table>
+        </TableContainer>
 
         </div>
     </div>

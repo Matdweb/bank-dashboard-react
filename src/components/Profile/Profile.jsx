@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfileCSS from'./Profile_styles.module.css'
-import BarsGraphic from './ChartsComponents/Chart'
+import ChartTabs from './ChartsComponents/ChartTabs'
 import images from '../../assets/exports/ContacList'
 import { RiNotification2Fill } from 'react-icons/all'
 import { BiMessageSquareDots } from 'react-icons/all'
@@ -82,7 +82,7 @@ function Profile() {
               </div>
             </div>
         </div>
-        <BarsGraphic />
+        <ChartTabs />
     </div>
   )
 }
