@@ -28,12 +28,13 @@ const id_card=[
     img: "",
     coin: "EUR"
   },
-  {text: "Buy now!"}
+  {text: "Buy now!"}  
 ]
 
 function Wallet() {
   return (
     <div className={WalletCSS.father}>
+
         <div className={WalletCSS.container_stats}>
             <div className={WalletCSS.container_cards}>
                 <div className={WalletCSS.card}>

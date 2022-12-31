@@ -3,7 +3,6 @@
 body.chakra-ui-light{
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
     width: 100%;
     min-height: 100vh;
@@ -16,7 +15,7 @@ body.chakra-ui-light{
     height: 100%;
     color: #fff;
     display: grid;
-    grid-template-columns: minmax(300px,500px) minmax(min-content,1000px) minmax(400px,600px);
+    grid-template-columns: minmax(200px,500px) minmax(min-content,1000px) minmax(400px,550px);
     grid-template-rows: 100%;
     grid-auto-rows: auto;
     min-height: 100vh;
@@ -90,7 +89,6 @@ html{
         grid-template-rows: 100% auto;
     }
     #root{
-        min-height: 550vh;
-        overflow-x: hidden;
+        min-height: fit-content;
     }
 }

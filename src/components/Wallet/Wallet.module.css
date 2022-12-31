@@ -1,19 +1,21 @@
 .father{
-    grid-column: 2 / 4;
+    grid-column: 2;
     grid-row: 1; 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
-    min-height: 100vh;
-    height: fit-content;
+    flex-flow: row wrap;
+    min-height: 90vh;
     padding: 20px;
-    min-width: 1500px;
-    width: 100%;
+    width: 90vw;
     height: 100%;
+    background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
+    outline: 1.5px solid #aaa;
 }
 
 .container_stats{
     max-width: 45%;
+    min-width: 300px;
     height: fit-content;
     padding: 12px;
     display: flex;
@@ -22,6 +24,7 @@
     flex-flow: row wrap;
     padding: 10px;
     padding-bottom: 0px;
+    outline: 1.5px solid #aaa;
 }
 
 .container_cards{
@@ -32,6 +35,7 @@
     flex-flow: column nowrap;
     width: 50%;
     height: 400px;
+    outline: 1.5px solid #aaa;
 }
 
 .card{
@@ -55,6 +59,7 @@
     color: #973f41;
     align-self: center;
 }
+
 .coinContainer{
     width: 45%;
     min-width: 240px;
@@ -82,7 +87,6 @@
 
 .card_chart{
     width: 100%;
-    max-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,22 +94,28 @@
     background: rgb(61,64,68);
     background: linear-gradient(122deg, rgba(61,64,68,1) 25%, rgba(31,31,37,1) 100%);
     border-radius: 20px;
+    margin: 30px 10px;
     outline: 1px solid #aaa;
-    
 }
 
 .container_table{
-    width: 40%;
-    height: 100%;
+    min-width: 550px;
+    width: 45%;
+    max-height: 90%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 30px 0px;
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1000px){
+    .container_table{
+        width: 100%;
+    }
     .father{
-        flex-flow: column wrap;
+        width: fit-content;
+    }
+    .card_chart{
+        min-width: 550px;
     }
 }

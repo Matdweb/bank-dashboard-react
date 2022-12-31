@@ -9,7 +9,6 @@
     justify-content: space-around;
     align-items: baseline;
     flex-flow: row wrap;
-    overflow: hidden;
 }
 
 .container_title{
@@ -19,6 +18,7 @@
     justify-content: space-around;
     align-items: center; 
     flex-flow: row wrap;
+    margin: 15px;
 }
 
 .search {
