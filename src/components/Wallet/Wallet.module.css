@@ -10,7 +10,6 @@
     width: 90vw;
     height: 100%;
     background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
-    outline: 1.5px solid #aaa;
 }
 
 .container_stats{
@@ -24,7 +23,6 @@
     flex-flow: row wrap;
     padding: 10px;
     padding-bottom: 0px;
-    outline: 1.5px solid #aaa;
 }
 
 .container_cards{
@@ -35,7 +33,6 @@
     flex-flow: column nowrap;
     width: 50%;
     height: 400px;
-    outline: 1.5px solid #aaa;
 }
 
 .card{
