@@ -9,7 +9,6 @@ body.chakra-ui-light{
     min-height: 100vh;
     height: 100%;
     background: rgb(29,29,34);
-    background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
 }
 
 .father-app{
@@ -17,10 +16,11 @@ body.chakra-ui-light{
     height: 100%;
     color: #fff;
     display: grid;
-    grid-template-columns: minmax(100px,500px) minmax(min-content,1000px) minmax(400px,600px);
+    grid-template-columns: minmax(300px,500px) minmax(min-content,1000px) minmax(400px,600px);
     grid-template-rows: 100%;
     grid-auto-rows: auto;
     min-height: 100vh;
+    background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
 }
 
 /* Estilos de scrroll bar de father */
@@ -29,7 +29,7 @@ body.chakra-ui-light{
 }
 
 *::-webkit-scrollbar:vertical {
-    width: 10px;
+    width: 15px;
 }
 
 *::-webkit-scrollbar-button:increment,*::-webkit-scrollbar-button {
@@ -41,8 +41,15 @@ body.chakra-ui-light{
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #26262f;
+    background-color: #3c3c45;
     border-radius: 20px;
+}
+/* Unique scrollBar styles for contacts and transactions components */
+#contacts::-webkit-scrollbar-thumb {
+    background-color: #26262f;
+}
+#transactions::-webkit-scrollbar-thumb{
+    background-color: #26262f;
 }
 
 *::-webkit-scrollbar-track {
@@ -53,6 +60,9 @@ footer{
     padding: 20px; 
     color: #fff; 
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer a{

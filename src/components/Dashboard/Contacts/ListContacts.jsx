@@ -44,7 +44,7 @@ function ListContacts() {
         </span>
     </div>
     <div className={ContactsCSS.container}>
-        <div className={ContactsCSS.contacts}>
+        <div className={ContactsCSS.contacts} id='contacts'>
             {contacts.map((contact,index)=>{
                 return (
                     <Contact 

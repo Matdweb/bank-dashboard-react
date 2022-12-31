@@ -55,7 +55,7 @@ function ComposedResponsiveChart() {
       ];
 
   return (
-    <div style={{ width: '100%', height: 350, marginTop: "12px", marginRight: "12px" }}>
+    <div style={{ width: '97%', height: 350, marginTop: "12px", marginRight: "12px" }}>
         <ResponsiveContainer>
           <ComposedChart
             width={500}

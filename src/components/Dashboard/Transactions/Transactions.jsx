@@ -88,7 +88,7 @@ function Transactions() {
         </span>
     </div>
     <div className={TransactionsCSS.container}>
-      <div className={TransactionsCSS.transactions}>
+      <div className={TransactionsCSS.transactions} id='transactions'>
           {transactions.map((transaction,index)=>{
               return (
                   <Transaction 
