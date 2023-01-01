@@ -5,6 +5,7 @@ import './App.css'
 import Profile from './components/Profile/Profile'
 import { Routes, Route } from "react-router-dom"
 import Wallet from './components/Wallet/Wallet'
+import CardsCarrousel from './components/CreditCards/CardsCarrousel'
 
 export const u = 12
 
@@ -13,9 +14,10 @@ function App() {
     <div className="father-app">
       <NavBar />
       <Routes>
-        <Route path="/" element={ [<DashBoard />, <Profile />] } />
-        <Route path="/Home" element={ [<DashBoard />, <Profile />] } />
-        <Route path="/Wallet" element={ <Wallet /> } />
+        <Route key={0} path="/" element={ [<DashBoard />, <Profile />] } />
+        <Route key={1} path="/Home" element={ [<DashBoard />, <Profile />] } />
+        <Route key={2} path="/Wallet" element={ <Wallet /> } />
+        <Route key={3} path="/ReCredit" element={ <CardsCarrousel /> } />
       </Routes>
     </div>
   )

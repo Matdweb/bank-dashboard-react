@@ -1,0 +1,138 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+.father{
+    min-width: 420px;
+    max-width: 490px;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotate(-90deg); */
+    transform: scale(.8);
+}
+
+/* Credit-card styles */
+.container{
+    transform: scale(.8);
+    min-width: 100%;
+    max-width: 100%;
+    height: 270px;
+    background: rgb(38,40,45);
+    background: linear-gradient(253deg, rgba(38,40,45,1) 0%, rgba(34,31,31,1) 67%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 1s;
+    overflow: hidden;
+    z-index: 1300;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+h1{
+    margin: 0;
+}
+
+.network{
+    transform: rotate(90deg);
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.chip{
+    width: 60px;
+    margin: 0 20px;
+}
+
+.cardContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+}
+
+.cardNumber{
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.credit-card .card-info-img .card-info span{
+    margin: 10px 0 15px 0;
+}
+
+.cardName{
+    font-weight: lighter;
+    font-size: 17px;
+    margin: 0;
+}
+
+.masterCard{
+    width: 90px;
+    margin-right: 15px;
+}
+
+/* back credit card */
+.behind{
+    transform: scale(.8);
+    position: absolute;
+    width: 500px;
+    height: 270px;
+    content: " ";
+    z-index: 1000;
+    background: rgb(38,40,45);
+    background: linear-gradient(253deg, rgb(27, 28, 31) 0%, rgba(34,31,31,1) 67%);
+    margin-left: 60px;
+    border-radius: 15px;
+    transition: all 1s;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+}
+
+.bar{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    margin-top: 40px;
+}
+
+.container:hover{
+    transform: scale(.8);
+}
+.behind:hover{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 800px){
+    .father{
+        transform: rotate(-90deg);
+    }
+    .behind:hover{
+        margin-left: 110px;
+        transform: scale(.8);
+    }
+}
