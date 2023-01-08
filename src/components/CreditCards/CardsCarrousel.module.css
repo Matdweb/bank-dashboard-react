@@ -2,7 +2,6 @@
     background: linear-gradient(8deg, rgba(29,29,34,1) 0%, rgba(52,52,56,1) 29%, rgba(34,33,40,1) 74%);
     grid-column: 2 / 4;
     grid-row: 1;
-    justify-self: center;
     width: 90%;
     height: 100%;
     display: flex;
@@ -10,6 +9,7 @@
     align-items: center;
     flex-flow: column nowrap;
     /* outline: 1px solid #aaa; */
+    padding-left: 20px;
 }
 
 .header{
@@ -27,7 +27,7 @@
     padding: 20px;
     height: 100%;
     overflow: visible;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 .item{
@@ -37,12 +37,4 @@
     align-items: center;
     overflow: visible;
     flex-flow: column nowrap;
-}
-
-.rec-slider-container{
-    overflow: visible;
-}
-
-.biYdFZ{
-    overflow: visible;
 }

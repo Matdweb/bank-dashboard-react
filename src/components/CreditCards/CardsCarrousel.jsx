@@ -4,13 +4,7 @@ import styles from "./CardsCarrousel.module.css";
 import CreditCard from './CreditCardComponent/CreditCard';
 import BottomDrawer from './Drawer/BottomDrawer'
 import { background } from '@chakra-ui/react';
-
-const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 1 },
-    { width: 768, itemsToShow: 1 },
-    { width: 1200, itemsToShow: 1 },
-  ];
+import './Carrousel-styles.css'
 
 const CreditCardsInfo = [
   {
@@ -35,7 +29,7 @@ const CreditCardsInfo = [
   },
   {
     account: "0328-77-999-27481-7",
-    number: "8547 667 0328",
+    number: "8547 6637 0328",
     date: "03/24",
     name: "Name LastName",
     ica: "789",
@@ -48,34 +42,24 @@ const CreditCardsInfo = [
 function CardsCarrousel() {
   return (
     <>
-      <div className={styles.father}>
+      <div className={styles.father} id='father'>
         <div className={styles.header}>
           <h2 style={{fontSize: "30px", fontWeight: "bolder", margin: "0 30px"}}>
             Your Credit Cards
           </h2>
         </div>
-        <Carousel breakPoints={breakPoints} className={styles.carrousel}>
-          <div className={styles.item}>
-            <CreditCard 
-            locked={true} 
-            data={CreditCardsInfo[0]}/>
-            <BottomDrawer 
-            data={CreditCardsInfo[0]}/>
-          </div>          
-          <div className={styles.item}>
-            <CreditCard 
-            locked={true} 
-            data={CreditCardsInfo[1]}/>
-            <BottomDrawer 
-            data={CreditCardsInfo[1]}/>
-          </div>
-          <div className={styles.item}>
-            <CreditCard 
-            locked={true} 
-            data={CreditCardsInfo[2]}/>
-            <BottomDrawer 
-            data={CreditCardsInfo[2]}/>
-          </div>
+        <Carousel className={styles.carrousel}>
+          {CreditCardsInfo.map((cardData,index)=>{
+            return (
+              <div key={index} className={styles.item}>
+                <CreditCard 
+                locked={true} 
+                data={cardData}/>
+                <BottomDrawer 
+                data={cardData}/>
+            </div> 
+            )
+          })}
         </Carousel>
       </div>
     </>

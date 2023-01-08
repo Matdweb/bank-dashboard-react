@@ -1,0 +1,30 @@
+button.rec-dot{
+    background-color: rgba(69, 102, 102, 0.89);
+    box-shadow: 0 0 1px 3px rgba(76, 143, 173, 0.37);
+}
+button.rec-dot:focus{
+    box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.37);
+}
+button.rec-dot:focus-visible{
+    box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.37);
+}
+.rec.rec-arrow {
+    background-color: #1474ac00;
+    transition: all .8s;
+}
+.rec.rec-arrow:hover {
+    background-color: #1474ac00!important;
+    outline: 1px solid #aaaa;
+    border-radius: 35%;
+}
+.rec.rec-arrow:focus-visible {
+    background-color: #1474ac00;
+}
+.rec.rec-arrow:focus {
+    background-color: #1474ac00!important;
+}
+.rec.rec-arrow:active {
+    border-radius: 100%;
+    outline: 1px solid #aaaa;
+}
+

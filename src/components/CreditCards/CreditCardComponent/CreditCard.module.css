@@ -11,6 +11,7 @@
     align-items: center;
     /* transform: rotate(-90deg); */
     transform: scale(.8);
+    color: #fff;
 }
 
 /* Credit-card styles */

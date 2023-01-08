@@ -1,5 +1,6 @@
 import React from 'react'
 import MyCardCSS from './MyCard_styles.module.css'
+import MasterCard from '../../../assets/img/masterCard.svg'
 import VISAimg from '../../../assets/img/visa-10.svg'
 import Chip from '../../../assets/img/chip-1.png'
 import { CgMenuRightAlt } from 'react-icons/all'
@@ -15,7 +16,7 @@ function MyCard() {
     </div>
     <div className={MyCardCSS.container_card}>
         <label className={MyCardCSS.visa_container}>
-            <img src={VISAimg} alt="" style={{width: "60px"}}/>
+            <img src={MasterCard} alt="" style={{width: "60px"}}/>
         </label>
         <div className={MyCardCSS.card}>
             <div className={MyCardCSS.header}>

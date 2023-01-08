@@ -26,15 +26,18 @@ export default function BottomDrawer({ data }) {
     return (
       <>
         <Button 
-        style={{margin: "10px"}}
+        style={{margin: "10px", marginTop: "50px"}}
         onClick={onOpen}
         colorScheme='twitter'
         variant='outline'>
           Use this one
         </Button>
-        <Drawer placement={'bottom'} onClose={onClose} isOpen={isOpen} background='black'>
+        <Drawer placement={'bottom'} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
-          <DrawerContent height='75vh' background='#aaa'>
+          <DrawerContent 
+          height='75vh' 
+          color='#fff'
+          backgroundImage='linear-gradient(126deg, rgba(59,60,69,1) 0%, rgba(19,20,22,1) 100%)'>
             <DrawerHeader borderBottomWidth='1px'>Account</DrawerHeader>
             <DrawerBody className={styles.body}>
               <div className={styles.content}>
@@ -47,13 +50,19 @@ export default function BottomDrawer({ data }) {
                   )
                 })}
               </div>
-              <div>
+              <div className={styles.containerCard}>
                 <CreditCard 
                 locked={false}
                 data={data}
                 />
-                <button>a</button>
-                <button>b</button>
+                <div className={styles.containerButtons}>
+                  <Button margin="10px" colorScheme='twitter' variant='outline'>
+                    Change to this
+                  </Button>
+                  <Button margin="10px" variant='outline' _hover=''>
+                    Cancel
+                  </Button>
+                </div>
               </div>
             </DrawerBody>
           </DrawerContent>

@@ -31,7 +31,7 @@ function CreditCard({ locked, data }) {
                     <label className={styles.cardName}>{data.name}</label>
                 </>
                 : <>
-                    <h3 className={styles.cardNumber}>*** *** 3283</h3>
+                    <h3 className={styles.cardNumber}>**** **** {data.number.slice(-4)}</h3>
                     <span style={{margin: "10px 0 15px 0"}}> </span>
                     <label className={styles.cardName}>{data.name}</label>
                 </>
