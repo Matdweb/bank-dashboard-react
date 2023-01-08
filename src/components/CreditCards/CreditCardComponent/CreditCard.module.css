@@ -30,6 +30,7 @@
     transition: all 1s;
     overflow: hidden;
     z-index: 1300;
+    color: #fff;
 }
 
 .header{
@@ -73,7 +74,7 @@ h1{
 .cardNumber{
     letter-spacing: 3px;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 28px;
     margin: 0;
     font-family: 'Roboto Mono', monospace;
 }

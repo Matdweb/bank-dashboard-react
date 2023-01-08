@@ -36,6 +36,7 @@
     justify-content: center;
     align-items: center;
     overflow: visible;
+    flex-flow: column nowrap;
 }
 
 .rec-slider-container{

@@ -1,13 +1,15 @@
+import { background } from '@chakra-ui/react'
 import React from 'react'
 import { FaWifi } from 'react-icons/fa'
 import chip from '../../../assets/img/chip.png'
 import MasterCard from '../../../assets/img/mastercard.svg'
 import styles from './CreditCard.module.css'
 
-function CreditCard() {
+function CreditCard({ locked, data }) {
+    console.log(data.styles)
   return (
   <div className={styles.father}>
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundImage: data.styles}}>
 
         <div className={styles.header}>
             <h1 style={{fontWeight: "lighter"}}>Credit Card</h1>
@@ -22,9 +24,19 @@ function CreditCard() {
 
         <div className={styles.cardContent}>
             <div className={styles.cardInfo}>
-                <h3 className={styles.cardNumber}>3890 2345 3283</h3>
-                <span style={{margin: "10px 0 15px 0"}}>11/24</span>
-                <label className={styles.cardName}>Nombre Persona</label>
+                {locked == false
+                ? <>
+                    <h3 className={styles.cardNumber}>{data.number}</h3>
+                    <span style={{margin: "10px 0 15px 0"}}>{data.date}</span>
+                    <label className={styles.cardName}>{data.name}</label>
+                </>
+                : <>
+                    <h3 className={styles.cardNumber}>*** *** 3283</h3>
+                    <span style={{margin: "10px 0 15px 0"}}> </span>
+                    <label className={styles.cardName}>{data.name}</label>
+                </>
+                }
+                
             </div>
 
             <div className={styles.masterCard}>
@@ -33,10 +45,10 @@ function CreditCard() {
         </div>
 
     </div>
-    <div className={styles.behind}>
+    <div className={styles.behind} style={{backgroundImage: data.styles}}>
         <div className={styles.bar}></div>
         <span style={{fontSize: "smaller", padding: "10px"}}>
-            ICA 3094
+           ICA {data.ica}
         </span>
     </div>
 </div>)
