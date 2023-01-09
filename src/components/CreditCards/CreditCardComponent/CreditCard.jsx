@@ -3,6 +3,8 @@ import React from 'react'
 import { FaWifi } from 'react-icons/fa'
 import chip from '../../../assets/img/chip.png'
 import MasterCard from '../../../assets/img/mastercard.svg'
+import americanExpress from '../../../assets/img/americanExpressLogo.png'
+import VISA from '../../../assets/img/visa-white.svg'
 import styles from './CreditCard.module.css'
 
 function CreditCard({ locked, data }) {
@@ -39,9 +41,25 @@ function CreditCard({ locked, data }) {
                 
             </div>
 
-            <div className={styles.masterCard}>
+            {data.type == 'visa'
+            ?
+            <div className={styles.type}>
+                <img src={VISA} alt="" style={{marginTop: "40px"}} />
+            </div>
+            : data.type == 'mastercard'
+            ?
+            <div className={styles.type}>
                 <img src={MasterCard} alt="" />
             </div>
+            : data.type == 'americanExpress'
+            ?
+            <div className={styles.type} style={{width: "130px"}}>
+                <img src={americanExpress} alt="" style={{transform: "translateY(10px)"}} />
+            </div>
+            :
+            <div className={styles.type}>
+                <img src={MasterCard} alt="" />
+            </div>}
         </div>
 
     </div>

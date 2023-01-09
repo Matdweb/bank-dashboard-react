@@ -8,16 +8,19 @@ import './Carrousel-styles.css'
 
 const CreditCardsInfo = [
   {
+    nameId: "NameL",
     account: "3283-02-009-76275-1",
     number: "3890 2345 3283",
-    date: "03/24",
+    date: "01/29",
     name: "Name LastName",
     ica: "123",
     balance: "$2.000",
     client: "US2864254-6658-508043",
+    type: "americanExpress", //visa,mastercard or americanExpress
     styles: ""
   },
   {
+    nameId: "NameL",
     account: "2972-91-997-65148-2",
     number: "4513 6305 2972",
     date: "06/28",
@@ -25,9 +28,11 @@ const CreditCardsInfo = [
     ica: "456",
     balance: "$9.070",
     client: "US1838250-7124-871250",
+    type: "mastercard", //visa,mastercard or americanExpress
     styles: "linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% )"
   },
   {
+    nameId: "NameL",
     account: "0328-77-999-27481-7",
     number: "8547 6637 0328",
     date: "03/24",
@@ -35,6 +40,7 @@ const CreditCardsInfo = [
     ica: "789",
     balance: "$4.000",
     client: "US8434248-1007-87432",
+    type: "visa", //visa,mastercard or americanExpress
     styles: "radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% )"
   }
 ]

@@ -72,3 +72,8 @@
     align-items: center;
     flex-flow: row nowrap;
 }
+
+.footer p{
+    font-size: 20px;
+    font-weight: normal;
+}

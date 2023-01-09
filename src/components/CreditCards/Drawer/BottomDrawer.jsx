@@ -10,6 +10,8 @@ import { useDisclosure } from '@chakra-ui/react'
 import CreditCard from '../CreditCardComponent/CreditCard'
 import { Button } from '@chakra-ui/react'
 import styles from './Drawer.module.css'
+import { useContext } from 'react'
+import { AccountContext } from '../../../MenuContext/AccountContext'
 
 export default function BottomDrawer({ data }) {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -23,6 +25,11 @@ export default function BottomDrawer({ data }) {
     {label: "ICA ", content: data.ica},
     {label: "Balance ", content: data.balance},
   ]
+
+  const {ChangeCurrentCreditCard} = useContext(AccountContext)
+  const ChangeCreditCard = ()=>{
+    ChangeCurrentCreditCard(data)
+  }
     return (
       <>
         <Button 
@@ -56,7 +63,11 @@ export default function BottomDrawer({ data }) {
                 data={data}
                 />
                 <div className={styles.containerButtons}>
-                  <Button margin="10px" colorScheme='twitter' variant='outline'>
+                  <Button 
+                  margin="10px" 
+                  colorScheme='twitter' 
+                  variant='outline'
+                  onClick={ChangeCreditCard}>
                     Change to this Card
                   </Button>
                 </div>
