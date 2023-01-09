@@ -1,7 +1,8 @@
 import React from 'react'
 import MyCardCSS from './MyCard_styles.module.css'
+import americanExpress from '../../../assets/img/americanExpressLogo.png'
 import MasterCard from '../../../assets/img/masterCard.svg'
-import VISAimg from '../../../assets/img/visa-10.svg'
+import VISA from '../../../assets/img/visa-10.svg'
 import Chip from '../../../assets/img/chip-1.png'
 import { CgMenuRightAlt } from 'react-icons/all'
 
@@ -15,8 +16,11 @@ function MyCard() {
         </span>
     </div>
     <div className={MyCardCSS.container_card}>
-        <label className={MyCardCSS.visa_container}>
-            <img src={MasterCard} alt="" style={{width: "60px"}}/>
+        <label 
+        className={MyCardCSS.visa_container} 
+        style={{background: "rgb(229,223,231)", 
+        background: "linear-gradient(194deg, rgba(229,223,231,1) 0%, rgba(16,59,208,0.8356384790244222) 100%)"}}>
+            <img src={VISA} alt="" style={{width: "60px"}}/>
         </label>
         <div className={MyCardCSS.card}>
             <div className={MyCardCSS.header}>
