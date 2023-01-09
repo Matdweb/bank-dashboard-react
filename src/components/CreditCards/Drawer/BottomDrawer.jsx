@@ -17,11 +17,11 @@ export default function BottomDrawer({ data }) {
     const acountContent = [
     {label: "Account ", content: data.account},
     {label: "Number ", content: data.number},
-    {label: "Date ", content: data.date},
     {label: "Name ", content: data.name},
+    {label: "For clients ", content: data.client},
+    {label: "Date ", content: data.date},
     {label: "ICA ", content: data.ica},
     {label: "Balance ", content: data.balance},
-    {label: "For clients ", content: data.client}
   ]
     return (
       <>
@@ -57,10 +57,7 @@ export default function BottomDrawer({ data }) {
                 />
                 <div className={styles.containerButtons}>
                   <Button margin="10px" colorScheme='twitter' variant='outline'>
-                    Change to this
-                  </Button>
-                  <Button margin="10px" variant='outline' _hover=''>
-                    Cancel
+                    Change to this Card
                   </Button>
                 </div>
               </div>

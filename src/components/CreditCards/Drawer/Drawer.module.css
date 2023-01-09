@@ -1,9 +1,10 @@
 .body{
-    min-width: 350px;
+    min-width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
+    overflow-x: hidden;
 }
 
 .content{
@@ -36,21 +37,23 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .containerButtons{
-    min-width: 80px;
-    width: 420px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
 }
 
 /* Responsive Design */
 @media only screen and (max-width: 800px){
     .containerButtons{
         margin-top: 50px;
+    }
+    .body{
+        justify-content: center;
+        transform: translateX(-10px);
     }
 }
