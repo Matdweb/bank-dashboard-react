@@ -3,6 +3,7 @@
 This is a [vite.js](https://vitejs.dev/) project bootstrapped with [`npm create vite@latest`](https://vitejs.dev/guide/). This application is a solution for a dashboard that displays and manages all kinds of information from a bank's user!
 This is an interface designed by myself based on this pinterest design [Banking Dashboard Design](https://www.pinterest.es/pin/1106900414638219342/) by Rakib Kowshar.
 
+## Demo
 See here deployed application: [bank-dashboard-react](https://bank-dashboard-react.netlify.app/);
 
 ## Getting Started
